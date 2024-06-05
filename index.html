@@ -23,7 +23,7 @@
     <!-- ====================== main page ======================  -->
 
 
-    <section class="vh-100 gradient-custom ">
+    <section id="loginPage" class="vh-100 gradient-custom ">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-12 col-md-8 col-lg-6 col-xl-5">
@@ -44,6 +44,9 @@
 
                                     <input type="password" id="yourPassword" class="form-control form-control mb-3"
                                         placeholder="Enter password" />
+
+                                    <div id="validStat" class="mb-4 "></div>
+                                    
                                 </div>
 
                                 <!-- <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p> -->
@@ -77,20 +80,21 @@
         </div>
     </section>
 
-    <section class="vh-100 gradient-custom d-none">
+    <section id="homePage" class="vh-100 gradient-custom d-none">
 
         <nav class="navbar bg-dark-subtle">
             <div class="container">
-                <P class="navbar-brand fw-bold">Navbar</P>
+                <P class="navbar-brand fw-bold">Login</P>
 
-                <button class="btn btn-dark" type="submit">log out</button>
+                <button id="logOut" class="btn btn-dark" type="submit"
+                onclick="goToLogin()">log out</button>
 
             </div>
         </nav>
 
         <div class="container py-5 h-100">
-            <div class="bg-white rounded-2 fs-1 fw-bold d-flex justify-content-center align-items-center "
-                style="height: 200px;">hello kimo</div>
+            <div id="textName" class="bg-dark text-white rounded-2 fs-1 fw-bold d-flex justify-content-center align-items-center "
+                style="height: 200px;">hello </div>
         </div>
 
     </section>
